@@ -38,11 +38,13 @@ namespace MDML.Models
         private static void Load(string path)
         {
             var info = FileReader.ReadFromPath(path);
+            // todo
         }
 
         public MicroscopeData(string path = "")
         {
             Load(path);
+            // todo
         }
     }
 }
