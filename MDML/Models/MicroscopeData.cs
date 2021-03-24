@@ -8,6 +8,7 @@ namespace MDML.Models
     {
         private string _name;
         private string _description;
+        private FileInfo _thumbnailData;
         private FileInfo _metaData;
 
         public string Name
@@ -22,17 +23,26 @@ namespace MDML.Models
             set => _description = value;
         }
 
+        public FileInfo ThumbnailData
+        {
+            get => _thumbnailData;
+            set => _thumbnailData = value;
+        }
+
         public FileInfo MetaData
         {
             get => _metaData;
             set => _metaData = value;
         }
 
-        public static void Load(string path)
+        private static void Load(string path)
         {
             var info = FileReader.ReadFromPath(path);
-            
-            
+        }
+
+        public MicroscopeData(string path = "")
+        {
+            Load(path);
         }
     }
 }
