@@ -19,6 +19,22 @@ The lib contains following parts:
 + [x] XmlFile Reader/Writer
 + [x] MetaData Coder/Decoder
 + [x] Resource Package System
++ [x] Format Convertor
+
+`XmlFile Reader/Writer` is based on `System.Xml`, which can read a xml document; \
+ `MetaData Coder/Decoder` is based on `System.IO` and `Nuget Package`, which can Encode/Decode the raw materials;  \
+`Resource Package System` is based on `System.Zip`, which can pack/unpack raw materials to a package; \
+`Format Convert` is `base on basic convert algorithm, which can convert raw materials to its correct format from other format.
+
+The extension name of our resource package is `.msd`, which means `MicroScpoeData`. 
+
+In `PackageName.msd` package, which original format is `ZIP`, there have three contents:
+
++ Description.xml
++ Thumbnail.res
++ Metadata.res
+
+`Description.xml` is the summary of the package, coding by `UTF-8`; `Thumbnail.res` is the raw materials of the slice thumbnail, original format is `PNG`; `Metadata.res` is the raw materials of the slice data, original format is `PNG`.
 
 ## Config ##
 
@@ -30,7 +46,7 @@ You can change DefaultPath like this:
 using MDML.Config;
 
 Method() {
-    Config.DefaultPath = %YOUR_PATH%;
+    Config.DefaultPath = $"{YOUR_PATH}";
 }
 ```
 
@@ -43,9 +59,9 @@ Method() {
 This project is commercial, which copyright by (SWU) Southwest University, China.
 
 
-<details open>
+<details>
   
-  <summary>Ptilopsis</summary>
+  <summary>Ptilopsis is under my desk</summary>
 
 ```txt
                                      0,    G          .CL;            
