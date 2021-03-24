@@ -24,7 +24,7 @@ The lib contains following parts:
 `XmlFile Reader/Writer` is based on `System.Xml`, which can read a xml document; \
  `MetaData Coder/Decoder` is based on `System.IO` and `Nuget Package`, which can Encode/Decode the raw materials;  \
 `Resource Package System` is based on `System.Zip`, which can pack/unpack raw materials to a package; \
-`Format Convert` is `base on basic convert algorithm, which can convert raw materials to its correct format from other format.
+`Format Convert` is base on basic convert algorithm, which can convert raw materials to its correct format from other format.
 
 The extension name of our resource package is `.msd`, which means `MicroScpoeData`. 
 
@@ -58,6 +58,7 @@ Method() {
 
 This project is commercial, which copyright by (SWU) Southwest University, China.
 
+----
 
 <details>
   
